@@ -1,0 +1,6 @@
+CREATE TABLE subscription (
+	id SERIAL PRIMARY KEY,
+	name VARCHAR(50) UNIQUE,
+	to_community_id INT UNIQUE,
+	to_user_id INT UNIQUE
+);
